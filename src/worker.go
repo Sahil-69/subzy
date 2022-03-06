@@ -49,7 +49,7 @@ func matchResponse(body string) Result {
 
 	for _, fingerprint := range fingerprints {
 		if strings.Contains(body, fingerprint.Fingerprint) {
-			return Result{aurora.Green("VULNERABLE"), fingerprint}
+			return Result{aurora.Green("POSSIBLITY"), fingerprint}
 
 		}
 	}
